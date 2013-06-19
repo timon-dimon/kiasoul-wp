@@ -42,29 +42,27 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
-			<hgroup style="background:url(<?php header_image(); ?>);">
-               	<?php
+		<hgroup style="background:url(<?php header_image(); ?>);">
+    	<?php
 				// Check to see if the header image has been removed
 				$header_image = get_header_image();
 				if ( ! empty( $header_image ) ) :
-				?>
-				<div id="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				</a></div>
-				<?php endif; // end check for removed header image ?>
-                <div id="site-details">            
+			?>
+			<div id="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a></div>
+			<?php endif; // end check for removed header image ?>
+      	<div id="site-details">            
 					<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
 					<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-                </div>
-			</hgroup>
-			<?php 
+        </div>
+		</hgroup>
+		<?php 
 			// Check to see if header search has been disable
 			$options = catchbox_get_theme_options();
 			if ( $options ['disable_header_search'] == 0 ) :
 				get_search_form();
             endif;  ?>
-
 	</header><!-- #branding -->
-  
+
 	<div id="main" class="clearfix">
 		<nav id="access" role="navigation">
 			<h3 class="assistive-text"><?php _e( 'Primary menu', 'catchbox' ); ?></h3>
@@ -75,14 +73,14 @@
       <?php if ( has_nav_menu( 'primary', 'catchbox' ) ) { 
 					wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-header-container' ) );
 				} else { ?>
-                	<div class="menu-header-container">
-						<?php wp_page_menu( array( 'menu_class'  => 'menu' ) ); ?>
-                    </div>
-				<?php
+      <div class="menu-header-container">
+				<?php wp_page_menu( array( 'menu_class'  => 'menu' ) ); ?>
+      </div>
+			<?php
                 } ?>   
 		</nav><!-- #access -->
-            
-			<?php if ( has_nav_menu( 'secondary', 'catchbox' ) ) { 
+
+		<?php if ( has_nav_menu( 'secondary', 'catchbox' ) ) { 
 				// Check is seconday menu is enable or not
 				$options = catchbox_get_theme_options();
 				if ( !empty ($options ['enable_menus'] ) ) :
@@ -90,22 +88,20 @@
 				else :
 					$menuclass = "mobile-disable";
 				endif;
-			?>
+		?>
 		<nav id="access-secondary" class="<?php echo $menuclass; ?>" role="navigation">
-                	<h3 class="assistive-text"><?php _e( 'Secondary menu', 'catchbox' ); ?></h3>
-						<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-						<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'catchbox' ); ?>"><?php _e( 'Skip to primary content', 'catchbox' ); ?></a></div>
-						<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'catchbox' ); ?>"><?php _e( 'Skip to secondary content', 'catchbox' ); ?></a></div>
-                    <?php wp_nav_menu( array( 'theme_location'  => 'secondary', 'container_class' => 'menu-secondary-container' ) );  ?>
+    	<h3 class="assistive-text"><?php _e( 'Secondary menu', 'catchbox' ); ?></h3>
+			<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
+			<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'catchbox' ); ?>"><?php _e( 'Skip to primary content', 'catchbox' ); ?></a></div>
+			<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'catchbox' ); ?>"><?php _e( 'Skip to secondary content', 'catchbox' ); ?></a></div>
+      <?php wp_nav_menu( array( 'theme_location'  => 'secondary', 'container_class' => 'menu-secondary-container' ) );  ?>
 		</nav>
     <?php } ?>
-	
+
 		<div class="submenu">&nbsp;</div>
-		
+
 		<div id="primary">
-		
-		<!--insert-->
-		
+			<!--insert-->
 			<div id="content" role="main">
 				<?php 
                 /** 

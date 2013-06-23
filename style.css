@@ -845,7 +845,11 @@ img#wpstats{display:none}
 	/* No need to float footer widgets at this size */
 	#colophon #supplementary .widget-area{	float:none;	margin-right:0;	width:auto;}
 	/* No need to float 404 widgets at this size */
-	.error404 #main .widget{	float:none;	margin-right:0;	width:auto;}	}
+	.error404 #main .widget{	float:none;	margin-right:0;	width:auto;}
+	#secondary .widget_sp_image{float:left;clear:none;margin:10px 45px}
+	.last_post{text-align:left}
+	.last_post a{line-height:0.8em}
+	#text-4,.AdSense_footer,div.facebook{display:none}}
 	
 @media screen and (max-width:767px){/*  small tablet */
 	#page{	max-width:480px;}
@@ -955,7 +959,7 @@ img#wpstats{display:none}
 	#branding hgroup{background:none !important;padding:1.5em 0}
 	.last_post a{line-height:1.2em}
 	.last_post br{display:none}
-	.widget_sp_image,.paid_advertising,#text-4,#first,.AdSense_footer,.facebook,#site-generator .clear{display:none}}
+	.widget_sp_image,.paid_advertising,#text-4,#first,.AdSense_footer,duv.facebook,#site-generator .clear{display:none}}
 @media screen and (max-width:319px){/* small phone */
 	#page{	max-width:100%;}
 	#page{	margin-top:0;}

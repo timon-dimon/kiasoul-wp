@@ -69,7 +69,7 @@ google_ad_height = 90;
                   <?php esc_attr_e('. All Rights Reserved.', 'catchbox'); ?>
                 </div>
                 <div class="powered">
-                	Kia Soul CLub Style by <a href="https://www.facebook.com/dima.dumchikov" target="_blank" title="Dima Dumchikov">Dima Dumchikov</a>
+                	Kia Soul Club Style by <a href="https://www.facebook.com/dima.dumchikov" target="_blank" title="Dima Dumchikov">Dima Dumchikov</a>
             	</div>
                 <?php do_action( 'catchbox_startgenerator_close' ); ?>
           	</div> <!-- #site-generator -->

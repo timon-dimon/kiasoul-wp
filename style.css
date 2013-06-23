@@ -959,7 +959,7 @@ img#wpstats{display:none}
 	#branding hgroup{background:none !important;padding:1.5em 0}
 	.last_post a{line-height:1.2em}
 	.last_post br{display:none}
-	.widget_sp_image,.paid_advertising,#text-4,#first,.AdSense_footer,duv.facebook,#site-generator .clear{display:none}}
+	.widget_sp_image,.paid_advertising,#text-4,#first,.AdSense_footer,div.facebook,#site-generator .clear{display:none}}
 @media screen and (max-width:319px){/* small phone */
 	#page{	max-width:100%;}
 	#page{	margin-top:0;}

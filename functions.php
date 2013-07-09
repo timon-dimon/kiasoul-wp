@@ -148,7 +148,8 @@ function catchbox_setup() {
 	add_image_size( 'featured-header', HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true ); // Used for logo (header) images
 	
 	//disable old image size for featued posts add_image_size( 'featured-slider', 560, 270, true );
-	add_image_size( 'featured-slider', 644, 320, true ); // Used for featured posts if a large-feature doesn't exist
+	add_image_size( 'featured-slider', 196, 89, true ); // Used for featured posts if a large-feature doesn't exist
+	//add_image_size( 'featured-slider', 644, 320, true );
 
 
 	// Add support for custom backgrounds	
